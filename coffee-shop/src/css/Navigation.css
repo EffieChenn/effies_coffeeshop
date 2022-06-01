@@ -1,0 +1,58 @@
+.navigation{
+    background-color:rgb(201, 227, 250);
+    position: absolute;
+    width: 230px;
+    height: 300vh;
+
+}
+
+.navigation li {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(103, 134, 161);
+    text-align: center;
+    list-style: none;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.navigation ul{
+    padding: 0;
+}
+
+/* #nav, #toggleNav{
+    display: none;
+} */
+
+/* navbar for mobile */
+
+@media screen and (max-width: 830px){
+    .navigation{
+        width: 20%;
+        height: 300vh;
+    }
+    .navigation ul{
+        padding-left: 5px;
+    }
+    #toggleNav{
+        display: block;
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width: 395px){
+    .navigation{
+        width: 20%;
+        height: 350vh;
+    }
+    .navigation ul{
+        padding-left: 5px;
+    }
+    .navigation li{
+        font-size: 15px;
+    }
+    #toggleNav{
+        display: block;
+        font-size: 30px;
+    }
+
+}

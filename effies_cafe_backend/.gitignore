@@ -1,0 +1,12 @@
+*.log
+*.swp
+*.zip
+*.tgz
+~*
+node_modules
+build
+coverage/
+.env
+.idea/
+.eslintcache
+.DS_Store

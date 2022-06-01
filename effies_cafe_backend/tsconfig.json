@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"module": "es2020",
+		"target": "es2020",
+		"moduleResolution": "node",
+		"noImplicitAny": false,
+		"importHelpers": true,
+		"outDir": "./build/",
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"allowJs": true,
+		"baseUrl": ".",
+		"lib": [
+			"es2020"
+		]
+	},
+	"exclude": [
+		"build/*"
+	],
+	"include": [
+		"data/**/*.ts",
+		"src/**/*.ts"
+	],
+	"paths": {
+		"@/*": [
+			"src/*"
+		]
+	},
+	"ts-node": {
+		"esm": true,
+		"moduleTypes": {
+			"jest.config.ts": "cjs",
+			"knexfile.ts": "cjs"
+		}
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"name": "effies_cafe_backend",
+	"version": "1.0.0",
+	"description": "Effie's Cafe",
+	"main": "start.js",
+	"type": "module",
+	"author": "Maple Leaf Software",
+	"license": "ISC",
+	"dependencies": {
+		"@types/cors": "^2.8.12",
+		"@types/express": "^4.17.13",
+		"@types/glob": "^7.2.0",
+		"@types/helmet": "^4.0.0",
+		"@types/minio": "^7.0.13",
+		"@types/morgan": "^1.9.3",
+		"@types/node": "^17.0.23",
+		"@types/pg": "^8.6.5",
+		"@typescript-eslint/eslint-plugin": "^5.19.0",
+		"@typescript-eslint/parser": "^5.19.0",
+		"axios": "^0.26.1",
+		"cors": "^2.8.5",
+		"cross-env": "^7.0.3",
+		"dotenv": "^16.0.0",
+		"express": "^4.17.3",
+		"express-static-gzip": "^2.1.5",
+		"helmet": "^5.0.2",
+		"jsonwebtoken": "^8.5.1",
+		"jwks-rsa": "^2.0.5",
+		"knex": "^1.0.7",
+		"moment": "^2.29.2",
+		"moment-timezone": "^0.5.34",
+		"morgan": "^1.10.0",
+		"pg": "^8.7.3",
+		"ts-node": "^10.7.0",
+		"ts-node-dev": "^1.1.8",
+		"tsc-watch": "^5.0.3",
+		"typescript": "^4.6.3",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.4.1",
+		"eslint": "^8.13.0",
+		"husky": "^7.0.4",
+		"jest": "^27.5.1",
+		"lint-staged": "^12.3.8",
+		"prettier": "^2.6.2",
+		"supertest": "^6.2.2",
+		"ts-jest": "^27.1.4"
+	},
+	"scripts": {
+		"check-types": "tsc",
+		"test": "cross-env NODE_OPTIONS='--experimental-modules --experimental-specifier-resolution=node' jest --detectOpenHandles",
+		"clear_test_cache": "jest --clearCache",
+		"lint": "eslint '*/**/*.{js,ts,tsx}'",
+		"dev": "node --experimental-specifier-resolution=node --experimental-modules --no-warnings --loader ts-node/esm src/server.ts",
+		"prepare": "husky install"
+	},
+	"lint-staged": {
+		"*.{js,ts}": "eslint --cache --fix",
+		"*.{js,ts,css,md}": "prettier --write"
+	}
+}

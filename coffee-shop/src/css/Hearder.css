@@ -1,0 +1,14 @@
+header{
+    background-color: aliceblue;
+    color: rgb(103, 134, 161);
+    height: 80px;
+    padding: 20px;
+    width: auto;
+}
+
+/* header for mobile */
+@media screen and (max-width: 830px){
+    h1{
+        text-align: center;
+    }
+}
